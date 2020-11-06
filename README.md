@@ -7,11 +7,21 @@
 ## Pull entire project
 
     mkdir /home/ocharrez/downloads
+
+    mkdir /home/ocharrez/downloads/nginx
     
-    cd /home/ocharrez/downlods
+    cd /home/ocharrez/downloads/nginx
+    
+    git init
     
     git pull https://github.com/KookaS/nginx.git
     
-    cp -ru home/ocharrez/downloads/nginx/* etc/nginx/
+    sudo cp -ru /home/ocharrez/downloads/nginx/* /etc/nginx/
     
-    rm etc/nginx/README.md
+    sudo rm -f /etc/nginx/README.md
+    
+    sudo cp /etc/nginx/sites-available/<domain_name> /etc/nginx/sites-enabled/<domain_name>> 
+
+## Certbot
+
+https://certbot.eff.org/lets-encrypt/ubuntufocal-nginx
