@@ -6,18 +6,12 @@
     
 ## Pull entire project
 
-    mkdir /home/ocharrez/downloads/nginx
+    mkdir /home/ocharrez/downloads
     
-    cd /home/ocharrez/downlods/nginx
+    cd /home/ocharrez/downlods
     
     git pull https://github.com/KookaS/nginx.git
     
     cp -ru home/ocharrez/downloads/nginx/* etc/nginx/
     
     rm etc/nginx/README.md
-    
-copy from sites-available to sites-enabled
-
-## Certbot
-
-https://certbot.eff.org/lets-encrypt/ubuntufocal-nginx
